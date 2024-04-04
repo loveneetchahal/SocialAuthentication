@@ -83,8 +83,7 @@ builder.Services.AddAuthentication(options =>
         ClockSkew = TimeSpan.Zero,
         RequireExpirationTime = true,
         IssuerSigningKey = new SymmetricSecurityKey(secret)
-    };
-
+    }; 
 });
            
 var app = builder.Build();
